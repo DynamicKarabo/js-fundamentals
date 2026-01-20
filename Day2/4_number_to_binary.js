@@ -1,0 +1,11 @@
+function numberToBinary(num) {
+    let binary = "";
+    while (num > 0) {
+        binary = (num % 2) + binary;
+        num = Math.floor(num / 2);
+    }
+    console.log(binary);
+}
+
+// Example
+numberToBinary(10);
